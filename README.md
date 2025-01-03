@@ -56,8 +56,8 @@ Before you begin, ensure you have met the following requirements:
 ### Clone the repository:
 
 ```bash
-git clone 
-cd 
+git clone https://github.com/UdaraSandaruwa16/Restaurant-Management-Engine.git
+cd Restaurant-Management-Engine
 ```
 
 ### Install the dependencies:
