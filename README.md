@@ -18,7 +18,7 @@ A full-stack restaurant management engine with a content management system (CMS)
 
 This project is a full-stack web application designed to manage restaurant operations efficiently. It includes a content management system (CMS) for managing menu items, reservations, orders, and other aspects of a restaurant. The application is built using React for the frontend, Express for the backend, and MongoDB as the database.
 
-## <a name="Features"> Features<a/>
+## <a name="Features"> Features</a>
 
 - Menu Management: Add, update, and delete menu items with descriptions, prices, and categories.
 - Order Management: Track customer orders and update their statuses in real-time.
@@ -27,7 +27,7 @@ This project is a full-stack web application designed to manage restaurant opera
 - Content Management System (CMS): Easy-to-use interface for managing restaurant content.
 - Responsive Design: Optimized for both desktop and mobile devices.
 
-## <a name="TechnologiesUsed">Technologies Used<a/>
+## <a name="TechnologiesUsed">Technologies Used</a>
 
 ### Frontend:
 
@@ -43,7 +43,7 @@ This project is a full-stack web application designed to manage restaurant opera
 - Multer (for file uploads)
 - Cloudinary
 
-## <a name="GettingStarted"> Getting Started<a/>
+## <a name="GettingStarted"> Getting Started</a>
 
 ### Prerequisites
 Before you begin, ensure you have met the following requirements:
@@ -52,12 +52,12 @@ Before you begin, ensure you have met the following requirements:
 - npm or yarn
 - MongoDB (local or cloud instance)
 
-## <a name="Installation"> Installation<a/>
+## <a name="Installation"> Installation</a>
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/UdaraSandaruwa16/Restaurant-Management-Engine.git
-cd Restaurant-Management-Engine
+git clone 
+cd 
 ```
 
 ### Install the dependencies:
@@ -91,10 +91,10 @@ npm run start
 cd frontend
 npm start
 ```
-## <a name="Usage"> Usage<a/>
+## <a name="Usage"> Usage</a>
 Once the application is up and running, staff can log in to manage menu items, handle reservations, and process orders. The CMS provides an intuitive interface for updating restaurant content, managing users, and tracking restaurant operations.
 
-## <a name="Contributing"> Contributing<a/>
+## <a name="Contributing"> Contributing</a>
 We welcome contributions! To contribute, follow these steps:
 
 1. Fork the repository.<br>
