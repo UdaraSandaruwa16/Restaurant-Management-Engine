@@ -1,6 +1,6 @@
 # Restaurant Management Engine with CMS
 
-./RME-CMS-Client/public/RME landing.png
+![RME Landing](./RME-CMS-Client/public/RME%20landing.png)
 
 A full-stack restaurant management engine with a content management system (CMS), developed using React, Express, and MongoDB.
 ## Table of Contents
