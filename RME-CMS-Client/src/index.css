@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap")
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: outfit;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.title-gradient__gradient {
+  background-color: #fff; /* Fallback color for browsers that do not support background-clip */
+  background-image: linear-gradient(45deg, #4b97f3, #a8bdea);
+  background-size: 100%;
+  background-repeat: no-repeat; /* Avoid repeating the background gradient */
+  -webkit-background-clip: text; /* Apply background-clip for WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Set text color to transparent for WebKit browsers */
+  -moz-background-clip: text; /* Apply background-clip for Mozilla Firefox */
+  -moz-text-fill-color: transparent; /* Set text color to transparent for Mozilla Firefox */
+  background-clip: text; /* Apply background-clip for other browsers */
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom, #000000 70%, #00008b 125%);
+}
+
+@keyframes bounceUp {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-bounceUp {
+  animation: bounceUp 1s ease-in-out;
+}
+
+@layer components {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #0000;
+    border-right-color: #ffa50097;
+    position: relative;
+    animation: l24 1s infinite linear;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: inherit;
+    animation: inherit;
+    animation-duration: 2s;
+  }
+  .loader:after {
+    animation-duration: 4s;
+  }
+  @keyframes l24 {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  @keyframes l13 {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  .App {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    background-color: #fff;
+  }
+
+  .dataCard {
+    background-color: #efefef;
+    border-radius: 0.5em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1em;
+  }
+
+  .revenueCard {
+    width: 92%;
+    height: 20rem;
+  }
+
+  .customerCard {
+    width: 50%;
+    height: 20rem;
+  }
+
+  .categoryCard {
+    width: 40%;
+    height: 20rem;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+}
